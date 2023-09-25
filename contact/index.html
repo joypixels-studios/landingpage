@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html style="" class="opacity rgba no-touchevents no-forcetouch">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        .LGLeeN-keyboard-shortcuts-view {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .LGLeeN-keyboard-shortcuts-view table,
+        .LGLeeN-keyboard-shortcuts-view tbody,
+        .LGLeeN-keyboard-shortcuts-view td,
+        .LGLeeN-keyboard-shortcuts-view tr {
+            background: inherit;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .LGLeeN-keyboard-shortcuts-view table {
+            display: table;
+        }
+
+        .LGLeeN-keyboard-shortcuts-view tr {
+            display: table-row;
+        }
+
+        .LGLeeN-keyboard-shortcuts-view td {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            display: table-cell;
+            color: #000;
+            padding: 6px;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .LGLeeN-keyboard-shortcuts-view td .VdnQmO-keyboard-shortcuts-view--shortcut-key {
+            background-color: #e8eaed;
+            border-radius: 2px;
+            border: none;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            color: inherit;
+            display: inline-block;
+            font-family: Google Sans Text, Roboto, Arial, sans-serif;
+            line-height: 16px;
+            margin: 0 2px;
+            min-height: 20px;
+            min-width: 20px;
+            padding: 2px 4px;
+            position: relative;
+            text-align: center;
+        }
+    </style>
+    <style>
+        .gm-control-active>img {
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .gm-control-active>img:nth-child(1) {
+            display: block;
+        }
+
+        .gm-control-active:focus>img:nth-child(1),
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1),
+        .gm-control-active:disabled>img:nth-child(1) {
+            display: none;
+        }
+
+        .gm-control-active:focus>img:nth-child(2),
+        .gm-control-active:hover>img:nth-child(2) {
+            display: block;
+        }
+
+        .gm-control-active:active>img:nth-child(3) {
+            display: block;
+        }
+
+        .gm-control-active:disabled>img:nth-child(4) {
+            display: block;
+        }
+
+        sentinel {}
+    </style>
+    <link type="text/css" rel="stylesheet" href="./contact_files/css" />
+    <link type="text/css" rel="stylesheet" href="./contact_files/css(1)" />
+    <style>
+        .gm-ui-hover-effect {
+            opacity: 0.6;
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1;
+        }
+
+        .gm-ui-hover-effect>span {
+            background-color: #000;
+        }
+
+        @media (forced-colors: active),
+        (prefers-contrast: more) {
+            .gm-ui-hover-effect>span {
+                background-color: ButtonText;
+            }
+        }
+
+        sentinel {}
+    </style>
+    <style>
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span {
+            outline-offset: 3px;
+        }
+
+        sentinel {}
+    </style>
+    <style>
+        @media print {
+
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none;
+            }
+        }
+
+        @media screen {
+
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none;
+            }
+        }
+    </style>
+    <style>
+        .dismissButton {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            color: #1a73e8;
+            border-radius: 4px;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            cursor: pointer;
+            padding: 0 24px;
+        }
+
+        .dismissButton:hover {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc;
+        }
+
+        .dismissButton:focus {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0;
+        }
+
+        .dismissButton:focus:not(:focus-visible) {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            outline: none;
+        }
+
+        .dismissButton:focus-visible {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0;
+        }
+
+        .dismissButton:hover:focus {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+        }
+
+        .dismissButton:hover:focus:not(:focus-visible) {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc;
+        }
+
+        .dismissButton:hover:focus-visible {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+        }
+
+        .dismissButton:active {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+            -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+        }
+
+        .dismissButton:disabled {
+            background-color: #fff;
+            border: 1px solid #f1f3f4;
+            color: #3c4043;
+        }
+
+        sentinel {}
+    </style>
+    <style>
+        .gm-style-moc {
+            background-color: rgba(0, 0, 0, 0.45);
+            pointer-events: none;
+            text-align: center;
+            -webkit-transition: opacity ease-in-out;
+            -o-transition: opacity ease-in-out;
+            transition: opacity ease-in-out;
+        }
+
+        .gm-style-mot {
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 22px;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+        }
+
+        sentinel {}
+    </style>
+    <style>
+        .gm-style img {
+            max-width: none;
+        }
+
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Blam! Games Studios</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <script src="./contact_files/modernizr.js"></script>
+    <!-- This site is optimized with the Sterc seoPro plugin 1.0.4 - http://www.sterc.nl/modx/seopro -->
+    <link rel="stylesheet" href="./contact_files/default.css" type="text/css" />
+    <style type="text/css">
+        .fancybox-margin {
+            margin-right: 0px;
+        }
+    </style>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/map.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/marker.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/controls.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/ViewportInfoService.GetViewportInfo"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/infowindow.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/AuthenticationService.Authenticate"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/vt"></script>
+    <script type="text/javascript" charset="UTF-8" src="./contact_files/QuotaService.RecordEvent"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo-holder">
+                <strong class="logo"><a href="../">Blam! Games Studios</a></strong>
+            </div>
+            <div class="nav-holder">
+                <div class="menu-icon">
+                    <span id="bar-1" class="line"></span>
+                    <span id="bar-2" class="line"></span>
+                    <span id="bar-3" class="line"></span>
+                </div>
+                <nav class="nav">
+                    <ul class="">
+                        <li class="first"><a href="../">What we do</a></li>
+                        <li><a href="../about-us/">About us</a></li>
+                        <li class="parent">
+                            <a href="../portfolio/">Portfolio</a>
+                            <ul class="">
+                                <li class="first"><a href="../concept-art/">Concept art</a></li>
+                                <li><a href="../animation/">Animation</a></li>
+                                <li><a href="../tvc-cgi/">TVC-CGI</a></li>
+                                <li><a href="../2d-art/">2d art</a></li>
+                                <li><a href="../3d-models/">3D models & environment</a></li>
+                                <li class="last"><a href="../game-dev/">Game dev</a></li>
+                            </ul>
+                        </li>
+                        <li class="last active"><a href="../contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="lead-holder for-contact">
+            <!-- <span class="arrow-box"><em class="arrow-bottom"></em></span> -->
+            <!-- <div class="text-holder">
+                <div class="text-block">
+                    <div class="line" style="width: 180px;"></div>
+                    <div class="pagetitle">
+                        <span style="visibility: hidden;" aria-label="Contact"></span>
+                        <ul class="texts" style="display: none;">
+                            <li class="current">Contact</li>
+                        </ul>
+                    </div>
+                    <div class="title"></div>
+                    <div class="text">
+                        <p>Get in touch with us. We’ll be happy to answer any questions about our games, art or
+                            potential partnership.</p>
+                    </div>
+                </div>
+            </div> -->
+            <img src="./images/contact/banner-contact.png" alt="image description" width="100%" />
+        </div>
+        <div class="main">
+            <div class="form-block">
+                <div class="col-left">
+                    <span class="title">art division</span>
+                    <div class="line" style="height: 230px;"></div>
+                    <div class="info">
+                        <strong>Business Partnerships:</strong>
+                        <span><strong>Email:</strong> <a href="mailto:oneleven.studio@gmail.com">oneleven.studio@gmail.com</a></span>
+                        <div class="next-item-line" style="height: 80px;"></div>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <span class="title">game dev</span>
+                    <div class="line" style="height: 230px;"></div>
+                    <div class="info">
+                        <div class="next-item-line" style="height: 80px;"></div>
+                        <div class="info-box">
+                            <strong>Hợp tác với chúng tôi, vui lòng viết thư tại:</strong>
+                            <span><strong>Email:</strong> <a href="mailto:oneleven.studio@gmail.com">oneleven.studio@gmail.com</a></span>
+                        </div>
+                        <strong>Có câu hỏi vui lòng liên hệ hỗ trợ với chúng tôi:</strong>
+                        <span><strong>Skype:</strong> <a href="mailto:oneleven.studio@gmail.com">oneleven.studio@gmail.com</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="address-block"></div>
+        </div>
+        <footer class="footer">
+            <div class="scroll-to-top" style="display: none;"></div>
+            <div class="footer-holder">
+                <div class="row">
+                    <div class="col item-1">
+                        <div class="title">About us</div>
+                        <ul class="navigation">
+                            <li class="first active"><a href="../">What we do</a></li>
+                            <li><a href="../about-us/">About us</a></li>
+                            <li><a href="../portfolio/">Portfolio</a></li>
+                            <li class="last"><a href="../contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col item-2">
+                        <div class="title">Get in touch</div>
+                        <div class="row">
+                            <p>
+                                Hợp tác với chúng tôi, vui lòng viết thư tại:
+                            </p>
+                            <a href="mailto:oneleven.studio@gmail.com">oneleven.studio@gmail.com</a>
+                        </div>
+                        <div class="row">
+                            <p>
+                                Có câu hỏi vui lòng liên hệ hỗ trợ với chúng tôi:
+                            </p>
+                            <a href="mailto:oneleven.studio@gmail.com">oneleven.studio@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col item-3">
+                        <div class="social-holder">
+                            <div class="title">Follow us:</div>
+                            <ul class="social">
+                                <li class="item-1">
+                                    <a target="_blank" href="https://www.facebook.com/oneleven.studio/"></a>
+                                </li>
+                                <li class="item-2">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UC8rbAPq4POAbE7DjvQbxTNw"></a>
+                                </li>
+                                <li class="item-3">
+                                    <a target="_blank" href="https://www.instagram.com/oneand1andone_111/"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./contact_files/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="/js/jquery-2.1.4.min.js"><\/script>');
+    </script>
+    <script src="./contact_files/jquery.min(1).js"></script>
+    <script src="./contact_files/app.min.js"></script>
+    <script src="./contact_files/main.js"></script>
+    <script src="./contact_files/js"></script>
+    <script src="./contact_files/map.min.js"></script>
+    <script type="text/javascript" src="./contact_files/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" href="./contact_files/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./contact_files/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="./contact_files/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./contact_files/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="./contact_files/jquery.fancybox-media.js"></script>
+    <link rel="stylesheet" href="./contact_files/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./contact_files/jquery.fancybox-thumbs.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox-button").fancybox({
+                prevEffect: "none",
+                nextEffect: "none",
+                closeBtn: true,
+
+                helpers: {
+                    title: { type: "inside" },
+                    buttons: null,
+                },
+            });
+        });
+    </script>
+    <script type="text/javascript" src="./contact_files/default.js"></script>
+    <script type="text/javascript">
+        AjaxForm.initialize({ assetsUrl: "\/assets\/components\/ajaxform\/", actionUrl: "\/assets\/components\/ajaxform\/action.php", closeMessage: "close all", formSelector: "form.ajax_form", pageId: 13 });
+    </script>
+    <script src="./contact_files/jquery.form.min.js"></script>
+    <script src="./contact_files/sweetalert.min.js"></script>
+</body>
+
+</html>
