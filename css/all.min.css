@@ -1191,22 +1191,22 @@ display: inline-table;
 .platform.item-1 .image {
   background: url(../images/console_icon.png) no-repeat;
 background-size: contain;
-background-position: center;
+background-position: center !important;
 }
 .platform.item-2 .image {
   background: url(../images/pc_icon.png) no-repeat;
 background-size: contain;
-background-position: center;
+background-position: center !important;
 }
 .platform.item-3 .image {
   background: url(../images/phone_icon.png) no-repeat;
 background-size: contain;
-background-position: center;
+background-position: center !important;
 }
 .platform.item-4 .image {
   background: url(../images/social_icon.png) no-repeat;
 background-size: contain;
-background-position: center;
+background-position: center !important;
 }
 .partners-holder {
   margin-bottom: 125px
@@ -3482,4 +3482,16 @@ left: -15px;
   .block-404 .box-404 {
     padding: 20px 0 0
   }
+}
+
+.contact-me {
+  padding: 5px 15px;
+  border-top: 1px solid #e0e0e0;
+}
+.contact-me .title {
+  max-width: 1200px;
+  margin   : 0 auto;
+}
+.text-black {
+  color: #000;
 }
